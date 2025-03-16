@@ -23,7 +23,7 @@ const DonationScreen: React.FC<DonationScreenProps> = ({ navigation }) => {
         <View style={styles.progressContainer}>
           <Text style={styles.progressText}>Current Progress: 95%</Text>
           <LinearProgress
-            value={0.95}
+            value={1}
             color={COLORS.secondary}
             variant="determinate"
             style={styles.progressBar}

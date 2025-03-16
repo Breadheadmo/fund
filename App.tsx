@@ -9,9 +9,9 @@ import DonationScreen from './src/screens/Donation';
 import StoryDetails from './src/screens/StoryDetails';
 
 type RootStackParamList = {
+  Splash: undefined;
   SignUp: undefined;
   SignIn: undefined;
-  Home: undefined;
   Donation: undefined;
   StoryDetails: undefined;
 };
@@ -22,15 +22,15 @@ const App: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator 
-        initialRouteName="SignUp"
+        initialRouteName="Splash"
         screenOptions={{
           headerShown: false,
           gestureEnabled: false
         }}
       >
+        <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
-        <Stack.Screen name="Home" component={SplashScreen} />
         <Stack.Screen name="Donation" component={DonationScreen} />
         <Stack.Screen name="StoryDetails" component={StoryDetails} />
       </Stack.Navigator>

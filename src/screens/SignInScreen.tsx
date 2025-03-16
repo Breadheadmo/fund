@@ -15,7 +15,7 @@ const SignInScreen: React.FC<SignInScreenProps> = ({ navigation }) => {
   const handleSignIn = () => {
     // Add your sign-in logic here
     // After successful sign-in:
-    navigation.replace('Home');
+    navigation.replace('Donation');
   };
 
   return (

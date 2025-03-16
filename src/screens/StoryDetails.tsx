@@ -33,11 +33,13 @@ const StoryDetails: React.FC<StoryDetailsProps> = ({ navigation }) => {
             title="Cancel"
             buttonStyle={styles.cancelButton}
             containerStyle={styles.buttonWrapper}
+            onPress={() => console.log('Cancel button pressed')} // Add this line
           />
           <Button
             title="Fund Directly"
             buttonStyle={styles.fundButton}
             containerStyle={styles.buttonWrapper}
+            onPress={() => console.log('Fund Directly button pressed')} // Add this line
           />
         </View>
       </View>

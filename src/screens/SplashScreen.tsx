@@ -15,7 +15,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
   // Auto-navigate to SignIn screen after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('SignIn');
+      navigation.replace('SignUp');
     }, 3000);
 
     // Cleanup timer on component unmount
